@@ -34,7 +34,7 @@
     "cy": "cypress open",
     "e2e": "start-server-and-test dev http://localhost:5173 \"npx cypress run\"",
     "typecheck": "tsc --incremental --noEmit",
-    "build": "pnpm build.lib && pnpm build.types && pnpm build.styles",
+    "build": "pnpm prepare && build.lib && pnpm build.types",
     "build.lib": "vite build --mode lib",
     "build.types": "tsc --emitDeclarationOnly",
     "build.styles": "cp src/style.css dist",
